@@ -1,0 +1,21 @@
+#resultLabel{
+	-fx-border-radius: 5px;
+	-fx-border-color: black;
+}
+
+.operator-button{
+	-fx-background-color: #f58f47;
+	-fx-text-fill: black;
+}
+
+.operator-button:hover{
+	-fx-background-color: #855635;
+}
+
+.action-button{
+	-fx-background-color: #ababab;
+}
+
+.action-button:hover{
+	-fx-background-color: #636363;
+}
