@@ -42,7 +42,5 @@ public class BigIntegerCalculator extends NumberCalculatorImpl<BigInteger>{
 			throw new CalculatorException(CalculatorException.SYNTAX_ERROR);
 		}
 	}
-
-	
 	
 }

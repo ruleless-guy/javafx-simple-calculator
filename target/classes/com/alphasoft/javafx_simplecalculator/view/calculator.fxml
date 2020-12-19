@@ -13,7 +13,7 @@
 <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="307.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alphasoft.javafx_simplecalculator.view.controller.CalculatorController">
    <children>
       <ComboBox fx:id="calculatorSelector" focusTraversable="false" prefWidth="280.0" promptText="Select Calculator" />
-      <Label fx:id="resultLabel" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="100.0" prefWidth="280.0">
+      <Label fx:id="resultLabel" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="100.0" prefWidth="280.0" wrapText="true">
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>

@@ -1,5 +1,6 @@
 package com.alphasoft.javafx_simplecalculator.view.controller;
 
+import java.math.RoundingMode;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -31,12 +32,11 @@ public class CalculatorController implements Initializable{
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		NumberCalculator bigCalculator = new BigDecimalCalculator();
+		NumberCalculator bigDecimalCalculator = new BigDecimalCalculator(30,RoundingMode.HALF_UP);
 		NumberCalculator doubleCalculator = new DoubleCalculator();
 		NumberCalculator bigIntegerCalculator = new BigIntegerCalculator();
-		
 		ObservableList<NumberCalculator> calculatorList = FXCollections.observableArrayList();
-		calculatorList.addAll(bigCalculator, bigIntegerCalculator, doubleCalculator);
+		calculatorList.addAll(bigDecimalCalculator, bigIntegerCalculator, doubleCalculator);
 		
 		calculatorSelector.getItems().addAll(calculatorList);
 	}

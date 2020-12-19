@@ -4,17 +4,21 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 import com.alphasoft.javafx_simplecalculator.entity.OperationEntity;
+
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class BigDecimalCalculator extends NumberCalculatorImpl<BigDecimal>{
 	
-	@Getter
-	@Setter
+	
 	private int decimalPlace = 14;
 	
-	@Getter
-	@Setter
 	private RoundingMode roundingMode = RoundingMode.HALF_UP;
 
 	@Override
