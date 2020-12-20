@@ -22,9 +22,9 @@ public class BigIntegerCalculator extends NumberCalculatorImpl<BigInteger>{
 					return leftOperand.add(rightOperand);
 				case MINUS:
 					return leftOperand.subtract(rightOperand);
-				case MULTIPLICATION:
+				case TIMES:
 					return leftOperand.multiply(rightOperand);
-				case DIVISION:
+				case OBELUS:
 					return leftOperand.divide(rightOperand);
 				default:
 					throw new CalculatorException(CalculatorException.NO_OPERATOR_FOUND);

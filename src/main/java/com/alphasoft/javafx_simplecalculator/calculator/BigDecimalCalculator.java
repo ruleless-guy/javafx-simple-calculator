@@ -38,9 +38,9 @@ public class BigDecimalCalculator extends NumberCalculatorImpl<BigDecimal>{
 					return leftOperand.add(rightOperand);
 				case MINUS:
 					return leftOperand.subtract(rightOperand);
-				case MULTIPLICATION:
+				case TIMES:
 					return leftOperand.multiply(rightOperand);
-				case DIVISION:
+				case OBELUS:
 					return leftOperand.divide(rightOperand, decimalPlace, roundingMode);
 				default:
 					throw new CalculatorException(CalculatorException.NO_OPERATOR_FOUND);

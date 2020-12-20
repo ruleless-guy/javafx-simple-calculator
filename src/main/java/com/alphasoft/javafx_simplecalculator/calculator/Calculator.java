@@ -5,7 +5,7 @@ public interface Calculator<R> {
 	R calculate(String operation);
 	
 	public enum Operator{
-		PLUS("+"), MINUS("-"), MULTIPLICATION("×"), DIVISION("÷");
+		PLUS("+"), MINUS("-"), TIMES("×"), OBELUS("÷");
 		
 		private final String value;
 		

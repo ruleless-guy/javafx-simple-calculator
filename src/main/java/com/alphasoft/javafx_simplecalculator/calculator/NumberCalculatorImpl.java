@@ -22,12 +22,12 @@ public abstract class NumberCalculatorImpl<T extends Number> implements NumberCa
 			}else if( operation.contains(Operator.MINUS.toString()) ) {
 				operands = operation.split("-",2);
 				operator = Operator.MINUS;
-			}else if( operation.contains(Operator.MULTIPLICATION.toString()) ) {
+			}else if( operation.contains(Operator.TIMES.toString()) ) {
 				operands = operation.split("×",2);
-				operator = Operator.MULTIPLICATION;
-			}else if( operation.contains(Operator.DIVISION.toString()) ) {
+				operator = Operator.TIMES;
+			}else if( operation.contains(Operator.OBELUS.toString()) ) {
 				operands = operation.split("÷",2);
-				operator = Operator.DIVISION;
+				operator = Operator.OBELUS;
 			}else {
 				return valueOf(operation);
 			}

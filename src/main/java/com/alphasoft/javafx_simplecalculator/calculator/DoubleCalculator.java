@@ -20,9 +20,9 @@ public class DoubleCalculator extends NumberCalculatorImpl<Double>{
 				return leftOperand + rightOperand;
 			case MINUS:
 				return leftOperand - rightOperand;
-			case MULTIPLICATION:
+			case TIMES:
 				return leftOperand *  rightOperand;
-			case DIVISION:
+			case OBELUS:
 				return leftOperand / rightOperand;
 			default:
 				throw new CalculatorException(CalculatorException.NO_OPERATOR_FOUND);
